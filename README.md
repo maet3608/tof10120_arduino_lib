@@ -1,8 +1,9 @@
-# tof10120_arduino_lib
+# Readme
 
 Arduino library for the VL53L0X Time-of-Flight ranging sensor.
 
-Should work with most Arduino, ESP32 and ESP8266 boards.
+Should work with most Arduino, ESP32 and ESP8266 boards. The code is based on the
+[Supplier documentation for the TOF10120](https://www.makerguides.com/wp-content/uploads/2024/09/TOF10120-supplier-doc.zip)
 
 For more details see 
 [TOF10120 Distance Sensor with Arduino](https://www.makerguides.com/tof10120-distance-sensor-with-arduino/)
@@ -13,6 +14,10 @@ For more details see
 
 A simple example that includes the library and uses the distance() function 
 to print the distance measured by the VL53L0X sensor to the Serial Monitor.
+
+The code assumes that pin 6 = SCL and  pin 5 = SDA of the VL53L0X 
+are connected to the standard SCL and SDA pins of the micrcontroller.
+However, you can uses `sensor.init(sda, scl)` to set specific pins.
 
 ```
 #include "TOF10120.h"
@@ -28,4 +33,5 @@ void loop() {
   Serial.println(sensor.distance());
   delay(100);
 }
+```
 ```
