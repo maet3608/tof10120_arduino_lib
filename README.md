@@ -15,9 +15,10 @@ For more details see
 A simple example that includes the library and uses the distance() function 
 to print the distance measured by the VL53L0X sensor to the Serial Monitor.
 
-The code assumes that pin 6 = SCL and  pin 5 = SDA of the VL53L0X 
+The code assumes that pin 6 (SCL) and  pin 5 (SDA) of the VL53L0X 
 are connected to the standard SCL and SDA pins of the micrcontroller.
-However, you can uses `sensor.init(sda, scl)` to set specific pins.
+However, you can use `sensor.init(sda, scl)` to set specific pins, e.g.
+for software I2C on ESP32 and ESP8266 boards.
 
 ```
 #include "TOF10120.h"
@@ -33,5 +34,4 @@ void loop() {
   Serial.println(sensor.distance());
   delay(100);
 }
-```
 ```
