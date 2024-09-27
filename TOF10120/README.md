@@ -1,4 +1,4 @@
-# tof10120_arduino_lib
+# Readme
 
 Arduino library for the VL53L0X Time-of-Flight ranging sensor.
 
@@ -29,3 +29,4 @@ void loop() {
   delay(100);
 }
 ```
+
