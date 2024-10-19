@@ -8,7 +8,20 @@ Should work with most Arduino, ESP32 and ESP8266 boards. The code is based on th
 For more details see 
 [TOF10120 Distance Sensor with Arduino](https://www.makerguides.com/tof10120-distance-sensor-with-arduino/)
 
+## Packaging
 
+Just zip up all the contents as zip file or download this repository as a .zip from GitHub via
+`Code -> Download ZIP`
+
+## Using library
+
+In Arduino IDE menu, go to `Sketch -> Include Libray -> Add .ZIP Library...` and then select the zipped library.
+
+After including it, you can add the include headers to your current sketch with `Sketch -> Include Library -> TOF10120`.
+
+## Running examples
+
+You can open the example from the Arduino IDE by going to the menu `File -> Examples -> TOF10120 -> TOF10120_test`.
 
 ## Example 
 
